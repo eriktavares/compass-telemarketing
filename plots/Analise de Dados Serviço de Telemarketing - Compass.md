@@ -9117,6 +9117,7 @@ mlflow.end_run()
 
     Modelo			Acuracy	Prec	Recall	F1-Score
     ------------------------------------------------------------------
+    Tree max_depth 9	 86.13	 81.39	 71.61	 74.75%
     
 
 # Resultados
