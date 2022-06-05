@@ -2406,107 +2406,6 @@ ou algum erro de digitação ou algum outro tipo de erro.
 
 
 ```python
-sorted(set(df_vars_t1 ['var2']))
-```
-
-
-
-
-    [-999,
-     1,
-     2,
-     5,
-     6,
-     7,
-     8,
-     9,
-     11,
-     13,
-     14,
-     15,
-     16,
-     17,
-     18,
-     19,
-     21,
-     22,
-     24,
-     26,
-     28,
-     30,
-     37,
-     38,
-     39,
-     42,
-     44,
-     45,
-     49,
-     50,
-     51,
-     52,
-     53,
-     54,
-     55,
-     56,
-     57,
-     58,
-     59,
-     60,
-     62,
-     64,
-     66,
-     67,
-     68,
-     69,
-     72,
-     73,
-     74,
-     75,
-     76,
-     77,
-     79,
-     80,
-     81,
-     82,
-     86,
-     89,
-     91,
-     92,
-     94,
-     99,
-     101,
-     102,
-     103,
-     104,
-     106,
-     108,
-     110,
-     111,
-     112,
-     113,
-     116,
-     117,
-     118,
-     119,
-     120,
-     121,
-     122,
-     123,
-     124,
-     125,
-     126,
-     128,
-     129]
-
-
-
-
-```python
-dict_999 = {-999: 0}
-```
-
-
-```python
 df_vars_t1[df_vars_t1['var2'] == -999]
 ```
 
@@ -2896,7 +2795,7 @@ plt.show()
 
 
     
-![png](output_66_0.png)
+![png](output_64_0.png)
     
 
 
@@ -4024,7 +3923,7 @@ plt.show()
 
 
     
-![png](output_77_0.png)
+![png](output_75_0.png)
     
 
 
@@ -4057,7 +3956,7 @@ plt.show()
 
 
     
-![png](output_80_0.png)
+![png](output_78_0.png)
     
 
 
@@ -4084,7 +3983,7 @@ plt.show()
 
 
     
-![png](output_84_0.png)
+![png](output_82_0.png)
     
 
 
@@ -4212,7 +4111,7 @@ plt.show()
 
 
     
-![png](output_89_0.png)
+![png](output_87_0.png)
     
 
 
@@ -4243,7 +4142,7 @@ plt.show()
 
 
     
-![png](output_92_0.png)
+![png](output_90_0.png)
     
 
 
@@ -4266,7 +4165,7 @@ plt.show()
 
 
     
-![png](output_95_0.png)
+![png](output_93_0.png)
     
 
 
@@ -4328,7 +4227,7 @@ plt.show()
 
 
     
-![png](output_101_0.png)
+![png](output_99_0.png)
     
 
 
@@ -4376,7 +4275,7 @@ plt.show()
 
 
     
-![png](output_105_0.png)
+![png](output_103_0.png)
     
 
 
@@ -4402,7 +4301,7 @@ plt.show()
 
 
     
-![png](output_106_0.png)
+![png](output_104_0.png)
     
 
 
@@ -4427,7 +4326,7 @@ plt.show()
 
 
     
-![png](output_107_0.png)
+![png](output_105_0.png)
     
 
 
@@ -5163,7 +5062,7 @@ sns.heatmap(matriz, annot = True, fmt = "d").set(xlabel = "Predição", ylabel="
 
 
     
-![png](output_122_1.png)
+![png](output_120_1.png)
     
 
 
@@ -6648,7 +6547,7 @@ mlflow.end_run()
 
 
     
-![png](output_136_0.png)
+![png](output_134_0.png)
     
 
 
@@ -7483,7 +7382,7 @@ mlflow.end_run()
 
 
     
-![png](output_147_0.png)
+![png](output_145_0.png)
     
 
 
@@ -8352,7 +8251,7 @@ mlflow.end_run()
 
 
     
-![png](output_156_0.png)
+![png](output_154_0.png)
     
 
 
@@ -8360,26 +8259,6 @@ mlflow.end_run()
 ```python
 pc.optimize_threshold(calibrated_model, optimize = 'Precision')
 ```
-
-
-```python
-data.keys()
-```
-
-
-
-
-    Index(['var1', 'var2', 'var3', 'var4', 'var5', 'var6', 'var7', 'var8', 'var9',
-           'var10', 'var11', 'var12', 'var13', 'var14', 'var15', 'var16', 'var17',
-           'var18', 'var19', 'var20', 'var21', 'var22', 'var23', 'var24', 'var25',
-           'var26', 'var27', 'var28', 'var29', 'var30', 'var31', 'var32', 'var33',
-           'var34', 'var35', 'var36', 'var37', 'var38', 'var39', 'var40', 'var41',
-           'var42', 'var43', 'var44', 'var45', 'var46', 'var47', 'var48', 'var49',
-           'var50', 'var51', 'var53', 'var54', 'var55', 'var56', 'var59', 'var60',
-           'var61', 'var62', 'var63', 'var64', 'var65', 'var67', 'var68', 'y'],
-          dtype='object')
-
-
 
 **4° Experimento**
 
@@ -9048,41 +8927,7 @@ mlflow.end_run()
     Tree max_depth 9	 82.95	 75.03	 69.76	 71.39%
     
 
-
-```python
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score
-
-with mlflow.start_run(experiment_id=experiment_id, run_name = 'RandomForestClassifier', nested=True, description= 'Exprerimento_5 Tratamento 08'):
-
-    X = df_vars_t7.drop(columns='y')
-    Y = target 
-
-    cv = StratifiedKFold(n_splits = 10, shuffle = False)
-
-    print("{}\t\t\t{}\t{}\t{}\t{}".format("Modelo","Acuracy","Prec","Recall", "F1-Score"))
-    print("------------------------------------------------------------------")
-
-    model = RandomForestClassifier()
-    accuracy = cross_val_score (model, X, Y, cv=cv, scoring='accuracy')
-    precision = cross_val_score (model, X, Y, cv=cv, scoring='precision_macro')
-    recall = cross_val_score (model, X, Y, cv=cv, scoring='recall_macro')
-    scoref1 = cross_val_score (model, X, Y, cv=cv, scoring='f1_macro')
-        #auc=cross_val_score (model, X, Y, cv=cv, scoring='auc')
-    print("{}\t{: .2f}\t{: .2f}\t{: .2f}\t{: .2f}%"
-            .format(modelname, accuracy.mean()*100, precision.mean()*100, recall.mean()*100, scoref1.mean()*100))
-    mlflow.log_metric('Accuracy', accuracy.mean())
-    mlflow.log_metric('Prec.', precision.mean())
-    mlflow.log_metric('Recall', recall.mean())
-    mlflow.log_metric('F1', scoref1.mean())
-        #mlflow.log_metric('auc', auc)
-mlflow.end_run()
-```
-
-    Modelo			Acuracy	Prec	Recall	F1-Score
-    ------------------------------------------------------------------
-    Tree max_depth 9	 85.07	 80.44	 68.32	 71.50%
-    
+**GradientBoostingClassifier**
 
 
 ```python
@@ -9098,26 +8943,47 @@ with mlflow.start_run(experiment_id=experiment_id, run_name = 'RandomForestClass
 
     print("{}\t\t\t{}\t{}\t{}\t{}".format("Modelo","Acuracy","Prec","Recall", "F1-Score"))
     print("------------------------------------------------------------------")
-
-    model = GradientBoostingClassifier()
-    accuracy = cross_val_score (model, X, Y, cv=cv, scoring='accuracy')
-    precision = cross_val_score (model, X, Y, cv=cv, scoring='precision_macro')
-    recall = cross_val_score (model, X, Y, cv=cv, scoring='recall_macro')
-    scoref1 = cross_val_score (model, X, Y, cv=cv, scoring='f1_macro')
-        #auc=cross_val_score (model, X, Y, cv=cv, scoring='auc')
-    print("{}\t{: .2f}\t{: .2f}\t{: .2f}\t{: .2f}%"
-            .format(modelname, accuracy.mean()*100, precision.mean()*100, recall.mean()*100, scoref1.mean()*100))
-    mlflow.log_metric('Accuracy', accuracy.mean())
-    mlflow.log_metric('Prec.', precision.mean())
-    mlflow.log_metric('Recall', recall.mean())
-    mlflow.log_metric('F1', scoref1.mean())
-        #mlflow.log_metric('auc', auc)
+    for i in range(3, 6):
+        modelname='GradientBoosting max_depth {}'.format(i)
+        model = GradientBoostingClassifier(ccp_alpha=0.0,
+                                        init=None,
+                                        learning_rate=0.1,
+                                        max_features=None,
+                                        max_leaf_nodes=None,
+                                        min_impurity_decrease=0.0,
+                                        min_impurity_split=None,
+                                        min_samples_leaf=1,
+                                        min_samples_split=2,
+                                        min_weight_fraction_leaf=0.0,
+                                        n_estimators=100,
+                                        n_iter_no_change=None,
+                                        random_state=3364,
+                                        subsample=1.0,
+                                        tol=0.0001,
+                                        validation_fraction=0.1,
+                                        verbose=0,
+                                        warm_start=False,
+                                        max_depth = i)
+        accuracy = cross_val_score (model, X, Y, cv=cv, scoring='accuracy')
+        precision = cross_val_score (model, X, Y, cv=cv, scoring='precision_macro')
+        recall = cross_val_score (model, X, Y, cv=cv, scoring='recall_macro')
+        scoref1 = cross_val_score (model, X, Y, cv=cv, scoring='f1_macro')
+            #auc=cross_val_score (model, X, Y, cv=cv, scoring='auc')
+        print("{}\t{: .2f}\t{: .2f}\t{: .2f}\t{: .2f}%"
+                .format(modelname, accuracy.mean()*100, precision.mean()*100, recall.mean()*100, scoref1.mean()*100))
+        mlflow.log_metric('Accuracy', accuracy.mean())
+        mlflow.log_metric('Prec.', precision.mean())
+        mlflow.log_metric('Recall', recall.mean())
+        mlflow.log_metric('F1', scoref1.mean())
+            #mlflow.log_metric('auc', auc)
 mlflow.end_run()
 ```
 
     Modelo			Acuracy	Prec	Recall	F1-Score
     ------------------------------------------------------------------
-    Tree max_depth 9	 86.13	 81.39	 71.61	 74.75%
+    GradientBoosting max_depth 3	 86.13	 81.39	 71.61	 74.74%
+    GradientBoosting max_depth 4	 85.94	 80.70	 71.74	 74.66%
+    GradientBoosting max_depth 5	 85.85	 80.44	 71.70	 74.54%
     
 
 # Resultados
@@ -9215,8 +9081,3 @@ Importancia das features, com a var4 como feature mais importante, seguindo pela
 
 E como todo esse processo é continuo sempre pode haver melhorias nos resultados com melhorias nas etapas anteriores. Sendo um clico de analise
 desenvolvimento, validação, operação e novamente analise, e assim pode diante
-
-
-```python
-
-```
